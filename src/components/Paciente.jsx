@@ -5,9 +5,7 @@ export default function Paciente({ paciente, setPaciente, eliminarPaciente}) {
     const respuesta = confirm('Deseas Eliminar este paciente?');
     if(respuesta){
      eliminarPaciente(id); 
-    }
-
-    
+    } 
   }
 
   return (

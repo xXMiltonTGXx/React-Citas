@@ -11,14 +11,14 @@ export default function Formulario({pacientes, setPacientes, paciente, setPacien
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    if(Object.keys(pacientes).length > 0){
-      setNombre(paciente.nombre);
-      setPropietario(paciente.propietario);
-      setEmail(paciente.email);
-      setFecha(paciente.fecha);
-      setSintomas(paciente.sintomas);
+    if( Object.keys(paciente).length > 0  ) {
+        setNombre(paciente.nombre)
+        setPropietario(paciente.propietario)
+        setEmail(paciente.email)
+        setFecha(paciente.fecha)
+        setSintomas(paciente.sintomas)
     }
-  }, [paciente]);
+}, [paciente])
 
   const generarId = () => {
     const random = Math.random().toString(36).substr(2);
